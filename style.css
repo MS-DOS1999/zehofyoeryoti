@@ -1,0 +1,542 @@
+@font-face {
+	font-family: '8bit_wondernominal';
+src: url('font/8-bit_wonder-webfont.eot');
+src: url('font/8-bit_wonder-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('font/8-bit_wonder-webfont.woff2') format('woff2'),
+		 url('font/8-bit_wonder-webfont.woff') format('woff'),
+		 url('font/8-bit_wonder-webfont.ttf') format('truetype'),
+		 url('font/8-bit_wonder-webfont.svg#8bit_wondernominal') format('svg');
+	 font-weight: normal;
+	 font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'conthraxsemibold';
+src: url('font/conthrax-sb-webfont.eot');
+src: url('font/conthrax-sb-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('font/conthrax-sb-webfont.woff2') format('woff2'),
+		 url('font/conthrax-sb-webfont.woff') format('woff'),
+		 url('font/conthrax-sb-webfont.ttf') format('truetype'),
+		 url('font/conthrax-sb-webfont.svg#conthraxsemibold') format('svg');
+	 font-weight: normal;
+	 font-style: normal;
+
+}
+
+*{
+margin: 0;
+padding: 0;
+		 box-sizing: border-box;
+}
+
+body{
+position: absolute;
+top: 0; bottom: 0; left: 0; right: 0;
+height: 100%;
+		background-size: 100% ;
+width:100%;  
+color:black;
+
+
+}
+
+body:before{
+
+content: "";
+position: fixed;
+height: 100%; width: 100%;
+		background-size: cover;
+		z-index: -1; /* Keep the background behind the content */
+		-webkit-background-size: cover; /* pour Chrome et Safari */
+		-moz-background-size: cover; /* pour Firefox */
+		-o-background-size: cover; /* pour Opera */
+		background-size: cover;
+		background-image: url('img/laChancla.jpg');
+		background-size: cover;
+	 }
+
+.container{
+width:100%;
+	  padding-top: 30px;
+	  padding-bottom: 30px;
+	  padding-left: 70px;
+	  padding-right: 70px;
+}
+
+.topCase{
+width: 100%;
+height: 500px;
+margin-bottom: 50px;
+}
+
+.formCase{
+	width: 100%;
+	margin-top:50px;
+	margin-bottom:50px;
+}
+
+.formDescription{
+	width: 100%;
+	height:75%;
+	padding: 10px;
+	background-color: rgba(88, 79, 79, 0.89);
+}
+
+.topMenu{
+width:100%;
+height: 25%;
+		background-color: rgba(11, 10, 10, 0.97);
+}
+
+.description{
+width:100%;
+height:75%;
+	   background-color: rgba(88, 79, 79, 0.89);
+	   display: flex;
+	   justify-content: center;
+	   align-items: center;
+}
+
+.logoJM{
+	margin-top: 10px;
+	margin-left:20px;
+	margin-bottom: 10px;
+height: 80%;
+float:left;
+}
+
+.menuName{
+display: flex;
+		 align-items: center;
+height: 100%;
+}
+
+.myname{
+	font-family: '8bit_wondernominal';
+	font-size: 20px;
+color: #aba7a7;
+	   margin-left: 20px;
+flex: 1;
+}
+
+.nom{
+	font-family:: '8bit_wondernominal';
+	font-size: 20px;
+color: #cecaca;
+}
+
+.spec{
+	font-family:'8bit_wondernominal';
+	font-size: 16px;
+color: #aba7a7;
+}
+.menuButtonContainer{
+flex:1;
+height: 100%;
+display: flex;
+}
+
+.unusedButton{
+height:100%;
+flex: 1;
+		border-left: 1px solid;
+		border-color: rgba(88, 79, 79, 0.89);
+		background-color: black;
+}
+
+.menuButton1{
+height: 100%;
+flex: 1;
+	  border-left: 1px solid;
+	  border-color: rgba(88, 79, 79, 0.89);
+}
+
+.icon{
+width: 35px;
+height: 35px;
+		margin-left: calc(50% - 17px);
+		margin-top: calc(55% - 17px);
+}
+
+.textIcon{
+	text-align: center;
+	font-family: 'conthraxsemibold';
+	color: #aba7a7;
+	font-size: 14px;
+}
+
+.menuButton2{
+height: 100%;
+flex: 1;
+	  border-left: 1px solid;
+	  border-color: rgba(88, 79, 79, 0.89);
+}
+
+.icon{
+	width: 35px;
+	height: 35px;
+	margin-left: calc(50% - 17px);
+	margin-top: calc(55% - 17px);
+}
+
+.textIcon{
+	text-align: center;
+	font-family: 'conthraxsemibold';
+	color: #aba7a7;
+	font-size: 14px;
+	width: 125.75px;
+}
+
+.menuButton3{
+height: 100%;
+flex: 1;
+	  border-left: 1px solid;
+	  border-color: rgba(88, 79, 79, 0.89);
+}
+
+.menuButton4{
+height: 100%;
+flex: 1;
+	  border-left: 1px solid;
+	  border-color: rgba(88, 79, 79, 0.89);
+	  position: relative;
+}
+
+.lienButton{
+	text-decoration: none;
+display: block;
+height: 100%;
+width: 100%;
+cursor: pointer;
+}
+
+.lienButton:hover{
+background: linear-gradient(to bottom right, rgba(255, 161, 0, 0.6), rgba(0,0,0, 0));
+}
+
+.desMe{
+	font-size: 58px;
+	font-family: 'conthraxsemibold';
+	color: #FFA100;
+}
+
+.desMeTraitement{
+	font-size: 40px;
+	font-family: 'conthraxsemibold';
+	color: #FFA100;
+}
+
+.age{
+	color: black;
+}
+
+.pro{
+	color: white;
+}
+
+.formLabel{
+	color: #FFA100;
+	font-family: 'conthraxsemibold';
+}
+
+.asterix{
+	color: red;
+}
+
+.formInput{
+	width:80%;
+	height: 30px;
+	font-size: 18px;
+	box-shadow: 10px;
+	border: 1px solid black;
+	background-color: grey;
+}
+
+.formInputEmail{
+	width: 90%;
+	height: 30px;
+	font-size: 18px;
+	box-shadow: 10px;
+	border: 1px solid black;
+	background-color: grey;
+}
+
+.formInputMessage{
+	width: 90%;
+	height: 350px;
+	max-width: 90%;
+	font-size: 18px;
+	box-shadow: 10px;
+	border: 1px solid black;
+	background-color: grey;
+}
+
+.submit{
+	 font-family: 'conthraxsemibold';
+	 background-color: black;
+	 border: 1px solid #FFA100;
+	 color: #FFA100;
+	 padding: 6px;
+	 font-size: 18px;
+	 cursor: pointer;
+
+}
+
+.champsRequis{
+	float: right;
+	color: white;
+	margin-right: 10%;
+}
+
+.flexProjet{
+	display: flex;
+}
+
+.containerProjet{
+	flex: 1;
+	height: 350px;
+	margin: 10px;
+	position: relative;
+}
+
+.imgProjet{
+	width: 100%;
+	height: 100%;
+}
+
+.lienProjet{
+	position: absolute;
+	top:0;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+
+.divOverflow{
+	position: absolute;
+	top:0;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+.porte1{
+	position: absolute;
+	top:0;
+	left:0;
+	background-color: rgba(255, 116, 0, 0.15);
+	width: 50%;
+	height: 100%;
+	transition: left 1s 0.3s;
+}
+
+.porte2{
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: rgba(255, 116, 0, 0.15);
+	width:50%;
+	height: 100%;
+	transition: right 1s 0.3s;
+}
+
+.nameProjet{
+	text-align: center;
+	font-size: 14px;
+	font-family: 'conthraxsemibold';
+	color: white;
+	position: absolute;
+	width: 100%;
+	bottom: 10%;
+	background-color: black;
+	transition: bottom 0.3s
+}
+
+.containerProjet:hover .porte1{
+	left: -50%;
+}
+
+.containerProjet:hover .porte2{
+	right: -50%;
+}
+
+.containerProjet:hover .nameProjet{
+	bottom: 100%;
+}
+
+.deroulReseaux{
+	position: absolute;
+	width: 100%;
+	top: 100%;
+	display: flex;
+}
+
+.lienReseaux{
+	width: 50%;
+	height: 60px;
+	padding: 5px;
+	background-color: rgba(0, 0, 0, 0.50);
+	border: 1px solid rgba(88, 79, 79, 0.50);
+	transition: background-color 0.5s;
+}
+
+.lienReseaux:hover{
+	background-color: rgba(255, 116, 0, 0.50);
+}
+
+.iconReseaux{
+	width: 100%;
+	height: 100%;
+}
+
+.footer{
+	width: 100%;
+	height: 120px;
+	background-color: rgba(11, 10, 10, 0.97);
+	display: flex;
+}
+
+.stack1{
+	flex:1;
+	display: flex;
+	   justify-content: center;
+	   align-items: center;
+	overflow: hidden;
+}
+
+.stack2{
+	width: 100%;
+	height: 50%;
+	display: flex;
+	   justify-content: center;
+	   align-items: center;
+	overflow: hidden;
+}
+
+.stack3{
+	flex:1;
+	display: flex;
+	   justify-content: center;
+	   align-items: center;
+	overflow: hidden;
+}
+
+.lienFooter{
+	font-size: 12px;
+	font-family: 'conthraxsemibold';
+	color: #cecaca;
+	padding: 5px;
+	text-decoration: none;
+}
+
+.underline{
+	width:100%;
+	height: 2px;
+	background-color: #FFA100;
+	margin-left: -2000px;
+	transition: margin-left 0.5s;
+}
+
+.containerLienFooter:hover .underline{
+	margin-left:0px;
+}
+
+.iconFooter{
+	width:30px;
+	height: 30px;
+	padding: 5px;
+	transition: transform 2.5s;
+	cursor: pointer;
+}
+
+.iconFooter:hover{
+	transform:rotate(360deg);
+}
+
+.iconFooterMail{
+	width:30px;
+	height: 30px;
+	padding: 5px;
+}
+
+.iconFooterCPU{
+	width: 60px;
+	height: 60px;
+	padding: 5px;
+}
+
+.nameFooter{
+	font-size: 12px;
+	font-family: '8bit_wondernominal';
+	padding: 5px;
+	color: #aba7a7;
+}
+
+.nameSpanFooter{
+	color: #cecaca;
+}
+
+.divDescription{
+	width: 100%;
+	height: 550px;
+	padding: 10px;
+	background-color: rgba(88, 79, 79, 0.89);
+	display: flex;
+}
+
+.photoMoi{
+	height: 100%;
+	border: 1px solid rgba(11, 10, 10, 0.97);
+}
+
+.titreDescription{
+	color: #FFA100;
+	width: 100%;
+	padding: 15px;
+	font-family: '8bit_wondernominal';
+	text-align: center;
+}
+
+.containerBioDescription{
+	display: flex;
+	   justify-content: center;
+	   align-items: center;
+	width: 100%;
+	height: 70%;
+
+}
+
+.bioDescription{
+	text-align: center;
+	font-family: 'conthraxsemibold';
+	font-size: 14px;
+	color: white;
+}
+
+.squareContainer{
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+
+.caseLeft{
+	height: 400px;
+	width:45%;
+	margin-right:5%;
+	padding:10px;
+	background-color:rgba(88,79,79, 0.89);
+}
+
+.caseRight{
+	height: 400px;
+	width:45%;
+	margin-left:5%;
+	padding:10px;
+	background-color:rgba(88,79,79, 0.89);
+}
+
+
+
+
+
